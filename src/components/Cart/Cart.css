@@ -1,0 +1,26 @@
+.cart {
+    background-color: #f5dbb4;
+    padding: 25px;
+    min-height: 100vh;
+}
+
+.oder-summary {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #1C2B35;
+    text-align: center;
+}
+
+.grand-total{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 21px;
+    color: #0E161A;
+    margin-top: -0px;
+}
+.cart p{
+    font-size: 17px;
+}
