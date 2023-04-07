@@ -1,0 +1,31 @@
+.review-item{
+    border: 1px solid #494545;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    width: 600px;
+}
+.review-img{
+    width: 100px;
+}
+.review-info{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+.review-name{
+    padding: p;
+    margin: 0;
+}
+.review-button{
+   margin-left: 200px;
+   color: red ;
+}
+.review-price{
+    padding: p;
+    margin: 0;
+}
+.review-quantity{
+    padding: p;
+    margin: 0;
+}
