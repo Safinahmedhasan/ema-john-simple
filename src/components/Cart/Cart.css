@@ -26,3 +26,21 @@
 .cart p{
     font-size: 17px;
 }
+.btn-clear-cart{
+    padding: 15px;
+    width:100%;
+    background-color: red;
+    color: #fff;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-clear-review{
+    padding: 15px;
+    width:100%;
+    background-color: yellow;
+    color: #000000;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}

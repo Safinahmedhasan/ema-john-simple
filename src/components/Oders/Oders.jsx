@@ -3,16 +3,21 @@ import Cart from '../Cart/Cart';
 import { useLoaderData } from 'react-router-dom';
 import ReviewItem from '../ReviewItem/ReviewItem';
 import './oder.css'
-import { removeFromDb } from '../../utilities/fakedb';
+import { deleteShoppingCart, removeFromDb } from '../../utilities/fakedb';
 
 const Oders = () => {
     const savedCart = useLoaderData();
-    const [cart , setCart] = useState(savedCart)
-    
-    const handleRemovedFromCart = (id) =>{
+    const [cart, setCart] = useState(savedCart)
+
+    const handleRemovedFromCart = (id) => {
         const remaning = cart.filter(product => product.id !== id);
         setCart(remaning);
         removeFromDb(id);
+    }
+
+    const handleClearCart = () => {
+        setCart([]);
+        deleteShoppingCart();
     }
 
     return (
@@ -25,9 +30,13 @@ const Oders = () => {
                         handleRemovedFromCart={handleRemovedFromCart}
                     ></ReviewItem>)
                 }
-            </div> 
+            </div>
             <div className="cart-container">
-               <Cart cart={cart}></Cart>
+                <Cart
+                    cart={cart}
+                    handleClearCart={handleClearCart}>
+                        <div>From Oders</div>
+                </Cart>
             </div>
         </div>
     );

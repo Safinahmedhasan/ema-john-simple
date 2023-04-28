@@ -12,6 +12,7 @@ import Oders from './components/Oders/Oders';
 import Login from './components/Login/Login';
 import Inven from './components/Inven/Inven';
 import carProductLoader from './components/Loaders/cartProductLoader';
+import SignUp from './components/signUp/SignUp';
 
 
 
@@ -36,6 +37,14 @@ const router = createBrowserRouter([
       {
         path: '/inventory',
         element: <Inven></Inven>
+      },
+      {
+        path: '/signup',
+        element: <SignUp></SignUp>
+      },
+      {
+        path:"*",
+        element: <div>343434343</div>
       }
     ]
   },

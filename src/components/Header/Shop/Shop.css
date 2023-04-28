@@ -8,3 +8,12 @@
     grid-template-columns: repeat(3, 1fr);
     gap:45px
 }
+.btn-clear-review{
+    padding: 15px;
+    width:100%;
+    background-color: yellow;
+    color: #000000;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
