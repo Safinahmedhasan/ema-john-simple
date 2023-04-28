@@ -18,3 +18,7 @@ nav.header a{
 nav.header a:hover{
     color: orange;
 }
+.text-white{
+    color:  rgba(255, 153, 0, 0.7);
+    padding: 0 5px;
+}

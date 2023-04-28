@@ -4,6 +4,7 @@ import Cart from '../../Cart/Cart';
 import Product from '../../Product/Product';
 import './Shop.css'
 import { Link } from 'react-router-dom';
+import toast, { Toaster } from 'react-hot-toast';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrashCan , faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
@@ -40,6 +41,7 @@ const Shop = () => {
         // const newCart = [...cart, product]
         let newCart = [];
         const exists = cart.find(pd => pd.id === product.id);
+        toast.success('added to Cart ❤️')
         if(!exists){
             product.quantity = 1;
             newCart = [...cart , product]
